@@ -22,7 +22,7 @@ def compare_lexicographic(a: Tuple[float], b: Tuple[float]) -> ComparisonOutcome
     """
     # todo
     index = 0
-    while index <= len(a):
+    while index < len(a) & index < len(b):
 
         if a[index] < b[index]:
             return FIRST_PREFERRED
